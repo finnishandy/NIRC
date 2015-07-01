@@ -1,0 +1,588 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'zmq' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 silly cache add args [ 'zmq', null ]
+5 verbose cache add spec zmq
+6 silly cache add parsed spec { raw: 'zmq',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'zmq',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed zmq@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'zmq', range: '*', hasData: false }
+11 silly mapToRegistry name zmq
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/zmq
+15 verbose addNameRange registry:https://registry.npmjs.org/zmq not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/zmq
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 2:48:29 PM
+19 verbose request id a5f83d39d9053d03
+20 http request GET https://registry.npmjs.org/zmq
+21 http 200 https://registry.npmjs.org/zmq
+22 silly get cb [ 200,
+22 silly get   { date: 'Sun, 19 Apr 2015 13:48:30 GMT',
+22 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"14FLT2EUEFQI6UYYC2PTSFZA2"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '50108',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     'x-served-by': 'cache-lhr6324-LHR',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1429451309.916483,VS0,VE645',
+22 silly get     vary: 'Accept',
+22 silly get     'keep-alive': 'timeout=10, max=50',
+22 silly get     connection: 'Keep-Alive' } ]
+23 verbose get saving zmq to /Users/Finnishandy/.npm/registry.npmjs.org/zmq/.cache.json
+24 silly addNameRange number 2 { name: 'zmq', range: '*', hasData: true }
+25 silly addNameRange versions [ 'zmq',
+25 silly addNameRange   [ '1.0.0',
+25 silly addNameRange     '1.0.1',
+25 silly addNameRange     '1.0.2',
+25 silly addNameRange     '1.0.3',
+25 silly addNameRange     '1.0.4',
+25 silly addNameRange     '2.0.0',
+25 silly addNameRange     '2.0.1',
+25 silly addNameRange     '2.0.2',
+25 silly addNameRange     '2.0.3',
+25 silly addNameRange     '2.1.0',
+25 silly addNameRange     '2.2.0',
+25 silly addNameRange     '2.3.0',
+25 silly addNameRange     '2.4.0',
+25 silly addNameRange     '2.5.0',
+25 silly addNameRange     '2.5.1',
+25 silly addNameRange     '2.6.0',
+25 silly addNameRange     '2.7.0',
+25 silly addNameRange     '2.8.0',
+25 silly addNameRange     '2.9.0',
+25 silly addNameRange     '2.10.0',
+25 silly addNameRange     '2.11.0' ] ]
+26 verbose addNamed zmq@2.11.0
+27 silly addNamed semver.valid 2.11.0
+28 silly addNamed semver.validRange 2.11.0
+29 silly mapToRegistry name zmq
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/zmq
+33 verbose addRemoteTarball https://registry.npmjs.org/zmq/-/zmq-2.11.0.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/zmq/-/zmq-2.11.0.tgz',
+34 verbose addRemoteTarball   '4511aee4b57109742eb8c51aa4c170211843e7cd' ]
+35 info retry fetch attempt 1 at 2:48:31 PM
+36 info attempt registry request try #1 at 2:48:31 PM
+37 http fetch GET https://registry.npmjs.org/zmq/-/zmq-2.11.0.tgz
+38 http fetch 200 https://registry.npmjs.org/zmq/-/zmq-2.11.0.tgz
+39 silly fetchAndShaCheck shasum 4511aee4b57109742eb8c51aa4c170211843e7cd
+40 verbose addTmpTarball /var/folders/v0/xkjlhy3s0vnf0ldrj9_gs0ch0000gn/T/npm-786-c6e191c3/registry.npmjs.org/zmq/-/zmq-2.11.0.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for zmq@2.11.0
+42 silly cache afterAdd zmq@2.11.0
+43 verbose afterAdd /Users/Finnishandy/.npm/zmq/2.11.0/package/package.json not in flight; writing
+44 verbose afterAdd /Users/Finnishandy/.npm/zmq/2.11.0/package/package.json written
+45 silly install resolved [ { name: 'zmq',
+45 silly install resolved     version: '2.11.0',
+45 silly install resolved     description: 'Bindings for node.js and io.js to ZeroMQ',
+45 silly install resolved     main: 'index',
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'http://github.com/JustinTulloss/zeromq.node.git' },
+45 silly install resolved     dependencies: { nan: '~1.5.0', bindings: '~1.1.1' },
+45 silly install resolved     devDependencies: { should: '2.1.x', semver: '~4.1.1', mocha: '~1.13.0' },
+45 silly install resolved     engines: { node: '>=0.8' },
+45 silly install resolved     scripts: { test: 'make test', install: 'node-gyp rebuild' },
+45 silly install resolved     keywords:
+45 silly install resolved      [ 'zeromq',
+45 silly install resolved        'zmq',
+45 silly install resolved        '0mq',
+45 silly install resolved        'ømq',
+45 silly install resolved        'libzmq',
+45 silly install resolved        'native',
+45 silly install resolved        'binding',
+45 silly install resolved        'addon' ],
+45 silly install resolved     author:
+45 silly install resolved      { name: 'Justin Tulloss',
+45 silly install resolved        email: 'justin.tulloss@gmail.com',
+45 silly install resolved        url: 'http://justin.harmonize.fm' },
+45 silly install resolved     contributors:
+45 silly install resolved      [ [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object] ],
+45 silly install resolved     gypfile: true,
+45 silly install resolved     gitHead: 'bfd80e374ee85e640e132f39e1e693955d6154ce',
+45 silly install resolved     bugs: { url: 'https://github.com/JustinTulloss/zeromq.node/issues' },
+45 silly install resolved     homepage: 'https://github.com/JustinTulloss/zeromq.node',
+45 silly install resolved     _id: 'zmq@2.11.0',
+45 silly install resolved     _shasum: '4511aee4b57109742eb8c51aa4c170211843e7cd',
+45 silly install resolved     _from: 'zmq@*',
+45 silly install resolved     _npmVersion: '2.5.1',
+45 silly install resolved     _nodeVersion: '0.12.1',
+45 silly install resolved     _npmUser: { name: 'ronkorving', email: 'ron@ronkorving.nl' },
+45 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '4511aee4b57109742eb8c51aa4c170211843e7cd',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/zmq/-/zmq-2.11.0.tgz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/zmq/-/zmq-2.11.0.tgz' } ]
+46 info install zmq@2.11.0 into /Users/Finnishandy/WebstormProjects/NIRC
+47 info installOne zmq@2.11.0
+48 verbose installOne of zmq to /Users/Finnishandy/WebstormProjects/NIRC not in flight; installing
+49 verbose lock using /Users/Finnishandy/.npm/_locks/zmq-b644601880d79117.lock for /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+50 silly install write writing zmq 2.11.0 to /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+51 silly cache addNamed cb zmq@2.11.0
+52 verbose unbuild node_modules/zmq
+53 silly gentlyRm /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq is being purged from base /Users/Finnishandy/WebstormProjects/NIRC
+54 verbose gentlyRm don't care about contents; nuking /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+55 verbose tar unpack /Users/Finnishandy/.npm/zmq/2.11.0/package.tgz
+56 verbose tar unpacking to /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+57 silly gentlyRm /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq is being purged
+58 verbose gentlyRm don't care about contents; nuking /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm extractEntry .npmignore
+62 silly gunzTarPerm extractEntry README.md
+63 silly gunzTarPerm extractEntry LICENSE
+64 silly gunzTarPerm extractEntry index.js
+65 silly gunzTarPerm extractEntry binding.gyp
+66 silly gunzTarPerm extractEntry .travis.yml
+67 silly gunzTarPerm extractEntry binding.cc
+68 silly gunzTarPerm extractEntry History.md
+69 silly gunzTarPerm extractEntry examples/dealer_router.js
+70 silly gunzTarPerm extractEntry examples/pub_sub.js
+71 silly gunzTarPerm extractEntry examples/push_pull.js
+72 silly gunzTarPerm extractEntry examples/rep_req.js
+73 silly gunzTarPerm extractEntry examples/req_rep.js
+74 silly gunzTarPerm extractEntry examples/router_dealer.js
+75 silly gunzTarPerm extractEntry examples/rpc.js
+76 silly gunzTarPerm extractEntry examples/devices/forwarder.js
+77 silly gunzTarPerm extractEntry examples/devices/queue.js
+78 silly gunzTarPerm extractEntry examples/devices/streamer.js
+79 silly gunzTarPerm extractEntry examples/workers/producer.js
+80 silly gunzTarPerm extractEntry examples/workers/worker.js
+81 silly gunzTarPerm extractEntry lib/index.js
+82 silly gunzTarPerm extractEntry test/context.js
+83 silly gunzTarPerm extractEntry test/socket.monitor.js
+84 silly gunzTarPerm extractEntry test/socket.pair.js
+85 silly gunzTarPerm extractEntry test/socket.pub-sub.js
+86 silly gunzTarPerm extractEntry test/socket.push-pull.js
+87 silly gunzTarPerm extractEntry test/socket.messages.js
+88 silly gunzTarPerm extractEntry test/socket.router.js
+89 silly gunzTarPerm extractEntry test/socket.stream.js
+90 silly gunzTarPerm extractEntry test/socket.unbind.js
+91 silly gunzTarPerm extractEntry test/socket.xpub-xsub.js
+92 silly gunzTarPerm extractEntry test/socket.zap.js
+93 silly gunzTarPerm extractEntry test/socket.js
+94 silly gunzTarPerm extractEntry test/zap.js
+95 silly gunzTarPerm extractEntry test/socket.events.js
+96 silly gunzTarPerm extractEntry test/zmq_proxy.js
+97 silly gunzTarPerm extractEntry test/zmq_proxy.xpub-xsub.js
+98 silly gunzTarPerm extractEntry test/zmq_proxy.push-pull.js
+99 silly gunzTarPerm extractEntry test/gc.js
+100 silly gunzTarPerm extractEntry test/zmq_proxy.router-dealer.js
+101 silly gunzTarPerm extractEntry test/exports.js
+102 silly gunzTarPerm extractEntry test/zmq_proxy.xrep-xreq.js
+103 silly gunzTarPerm extractEntry test/socket.req-rep.js
+104 silly gunzTarPerm extractEntry test/mocha.opts
+105 silly gunzTarPerm extractEntry Makefile
+106 silly gunzTarPerm extractEntry perf/local_lat.js
+107 silly gunzTarPerm extractEntry perf/local_thr.js
+108 silly gunzTarPerm extractEntry perf/remote_lat.js
+109 silly gunzTarPerm extractEntry perf/remote_thr.js
+110 silly gunzTarPerm extractEntry windows/include/zmq.h
+111 silly gunzTarPerm extractEntry windows/include/zmq_utils.h
+112 silly gunzTarPerm extractEntry windows/lib/x64/libzmq-v100-mt-3_2_2.dll
+113 silly gunzTarPerm extractEntry windows/lib/x64/libzmq-v100-mt-3_2_2.lib
+114 silly gunzTarPerm extractEntry windows/lib/x86/libzmq-v100-mt-3_2_2.dll
+115 silly gunzTarPerm extractEntry windows/lib/x86/libzmq-v100-mt-3_2_2.lib
+116 info preinstall zmq@2.11.0
+117 silly prepareForInstallMany adding nan@~1.5.0 from zmq dependencies
+118 silly prepareForInstallMany adding bindings@~1.1.1 from zmq dependencies
+119 silly cache add args [ 'bindings@~1.1.1', null ]
+120 verbose cache add spec bindings@~1.1.1
+121 silly cache add parsed spec { raw: 'bindings@~1.1.1',
+121 silly cache add   scope: null,
+121 silly cache add   name: 'bindings',
+121 silly cache add   rawSpec: '~1.1.1',
+121 silly cache add   spec: '>=1.1.1 <1.2.0',
+121 silly cache add   type: 'range' }
+122 verbose addNamed bindings@>=1.1.1 <1.2.0
+123 silly addNamed semver.valid null
+124 silly addNamed semver.validRange >=1.1.1 <1.2.0
+125 silly addNameRange { name: 'bindings', range: '>=1.1.1 <1.2.0', hasData: false }
+126 silly mapToRegistry name bindings
+127 silly mapToRegistry using default registry
+128 silly mapToRegistry registry https://registry.npmjs.org/
+129 silly mapToRegistry uri https://registry.npmjs.org/bindings
+130 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+131 silly cache add args [ 'nan@~1.5.0', null ]
+132 verbose cache add spec nan@~1.5.0
+133 silly cache add parsed spec { raw: 'nan@~1.5.0',
+133 silly cache add   scope: null,
+133 silly cache add   name: 'nan',
+133 silly cache add   rawSpec: '~1.5.0',
+133 silly cache add   spec: '>=1.5.0 <1.6.0',
+133 silly cache add   type: 'range' }
+134 verbose addNamed nan@>=1.5.0 <1.6.0
+135 silly addNamed semver.valid null
+136 silly addNamed semver.validRange >=1.5.0 <1.6.0
+137 silly addNameRange { name: 'nan', range: '>=1.5.0 <1.6.0', hasData: false }
+138 silly mapToRegistry name nan
+139 silly mapToRegistry using default registry
+140 silly mapToRegistry registry https://registry.npmjs.org/
+141 silly mapToRegistry uri https://registry.npmjs.org/nan
+142 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+143 verbose request uri https://registry.npmjs.org/bindings
+144 verbose request no auth needed
+145 info attempt registry request try #1 at 2:48:32 PM
+146 verbose etag "5997G8NY1OJEMZ1HNHL7VBX5J"
+147 http request GET https://registry.npmjs.org/bindings
+148 verbose request uri https://registry.npmjs.org/nan
+149 verbose request no auth needed
+150 info attempt registry request try #1 at 2:48:32 PM
+151 verbose etag "2RVNOBUBIPFCFHXKKPTSTKGB8"
+152 http request GET https://registry.npmjs.org/nan
+153 http 304 https://registry.npmjs.org/bindings
+154 silly get cb [ 304,
+154 silly get   { date: 'Sun, 19 Apr 2015 13:48:33 GMT',
+154 silly get     server: 'Apache',
+154 silly get     via: '1.1 varnish',
+154 silly get     'last-modified': 'Sun, 19 Apr 2015 13:48:34 GMT',
+154 silly get     'cache-control': 'max-age=60',
+154 silly get     etag: '"5997G8NY1OJEMZ1HNHL7VBX5J"',
+154 silly get     age: '0',
+154 silly get     'x-served-by': 'cache-lhr6334-LHR',
+154 silly get     'x-cache': 'HIT',
+154 silly get     'x-cache-hits': '1',
+154 silly get     'x-timer': 'S1429451313.374817,VS0,VE640',
+154 silly get     vary: 'Accept',
+154 silly get     'content-length': '0',
+154 silly get     'keep-alive': 'timeout=10, max=50',
+154 silly get     connection: 'Keep-Alive' } ]
+155 verbose etag https://registry.npmjs.org/bindings from cache
+156 verbose get saving bindings to /Users/Finnishandy/.npm/registry.npmjs.org/bindings/.cache.json
+157 silly addNameRange number 2 { name: 'bindings', range: '>=1.1.1 <1.2.0', hasData: true }
+158 silly addNameRange versions [ 'bindings',
+158 silly addNameRange   [ '0.0.1',
+158 silly addNameRange     '0.1.0',
+158 silly addNameRange     '0.1.1',
+158 silly addNameRange     '0.2.0',
+158 silly addNameRange     '0.2.1',
+158 silly addNameRange     '0.2.2',
+158 silly addNameRange     '0.2.3',
+158 silly addNameRange     '0.2.4',
+158 silly addNameRange     '0.3.0',
+158 silly addNameRange     '0.4.0',
+158 silly addNameRange     '1.0.0',
+158 silly addNameRange     '1.1.0',
+158 silly addNameRange     '1.1.1',
+158 silly addNameRange     '1.2.0',
+158 silly addNameRange     '1.2.1' ] ]
+159 verbose addNamed bindings@1.1.1
+160 silly addNamed semver.valid 1.1.1
+161 silly addNamed semver.validRange 1.1.1
+162 silly mapToRegistry name bindings
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry https://registry.npmjs.org/
+165 silly mapToRegistry uri https://registry.npmjs.org/bindings
+166 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz not in flight; adding
+167 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz',
+167 verbose addRemoteTarball   '951f7ae010302ffc50b265b124032017ed2bf6f3' ]
+168 info retry fetch attempt 1 at 2:48:33 PM
+169 info attempt registry request try #1 at 2:48:33 PM
+170 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz
+171 http 200 https://registry.npmjs.org/nan
+172 silly get cb [ 200,
+172 silly get   { date: 'Sun, 19 Apr 2015 13:48:34 GMT',
+172 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+172 silly get     etag: '"5IOU70T0MNE17LALUE9YPLT5T"',
+172 silly get     'content-type': 'application/json',
+172 silly get     'cache-control': 'max-age=60',
+172 silly get     'content-length': '96185',
+172 silly get     'accept-ranges': 'bytes',
+172 silly get     via: '1.1 varnish',
+172 silly get     age: '0',
+172 silly get     'x-served-by': 'cache-lhr6324-LHR',
+172 silly get     'x-cache': 'HIT',
+172 silly get     'x-cache-hits': '1',
+172 silly get     'x-timer': 'S1429451313.378386,VS0,VE660',
+172 silly get     vary: 'Accept',
+172 silly get     'keep-alive': 'timeout=10, max=50',
+172 silly get     connection: 'Keep-Alive' } ]
+173 verbose get saving nan to /Users/Finnishandy/.npm/registry.npmjs.org/nan/.cache.json
+174 silly addNameRange number 2 { name: 'nan', range: '>=1.5.0 <1.6.0', hasData: true }
+175 silly addNameRange versions [ 'nan',
+175 silly addNameRange   [ '0.3.0-wip',
+175 silly addNameRange     '0.3.0-wip2',
+175 silly addNameRange     '0.3.0',
+175 silly addNameRange     '0.3.1',
+175 silly addNameRange     '0.3.2',
+175 silly addNameRange     '0.4.0',
+175 silly addNameRange     '0.4.1',
+175 silly addNameRange     '0.4.2',
+175 silly addNameRange     '0.4.3',
+175 silly addNameRange     '0.4.4',
+175 silly addNameRange     '0.5.0',
+175 silly addNameRange     '0.5.1',
+175 silly addNameRange     '0.5.2',
+175 silly addNameRange     '0.6.0',
+175 silly addNameRange     '0.7.0',
+175 silly addNameRange     '0.7.1',
+175 silly addNameRange     '0.8.0',
+175 silly addNameRange     '1.0.0',
+175 silly addNameRange     '1.1.0',
+175 silly addNameRange     '1.1.1',
+175 silly addNameRange     '1.1.2',
+175 silly addNameRange     '1.2.0',
+175 silly addNameRange     '1.3.0',
+175 silly addNameRange     '1.4.0',
+175 silly addNameRange     '1.4.1',
+175 silly addNameRange     '1.5.0',
+175 silly addNameRange     '1.4.2',
+175 silly addNameRange     '1.4.3',
+175 silly addNameRange     '1.5.1',
+175 silly addNameRange     '1.5.2',
+175 silly addNameRange     '1.6.0',
+175 silly addNameRange     '1.5.3',
+175 silly addNameRange     '1.6.1',
+175 silly addNameRange     '1.6.2',
+175 silly addNameRange     '1.7.0' ] ]
+176 verbose addNamed nan@1.5.3
+177 silly addNamed semver.valid 1.5.3
+178 silly addNamed semver.validRange 1.5.3
+179 silly cache afterAdd nan@1.5.3
+180 verbose afterAdd /Users/Finnishandy/.npm/nan/1.5.3/package/package.json not in flight; writing
+181 verbose afterAdd /Users/Finnishandy/.npm/nan/1.5.3/package/package.json written
+182 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz
+183 silly fetchAndShaCheck shasum 951f7ae010302ffc50b265b124032017ed2bf6f3
+184 verbose addTmpTarball /var/folders/v0/xkjlhy3s0vnf0ldrj9_gs0ch0000gn/T/npm-786-c6e191c3/registry.npmjs.org/bindings/-/bindings-1.1.1.tgz not in flight; adding
+185 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.1.1
+186 silly cache afterAdd bindings@1.1.1
+187 verbose afterAdd /Users/Finnishandy/.npm/bindings/1.1.1/package/package.json not in flight; writing
+188 verbose afterAdd /Users/Finnishandy/.npm/bindings/1.1.1/package/package.json written
+189 silly install resolved [ { name: 'nan',
+189 silly install resolved     version: '1.5.3',
+189 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+189 silly install resolved     main: 'include_dirs.js',
+189 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+189 silly install resolved     scripts:
+189 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+189 silly install resolved        'rebuild-tests': 'node-gyp rebuild --directory test' },
+189 silly install resolved     contributors:
+189 silly install resolved      [ [Object],
+189 silly install resolved        [Object],
+189 silly install resolved        [Object],
+189 silly install resolved        [Object],
+189 silly install resolved        [Object],
+189 silly install resolved        [Object],
+189 silly install resolved        [Object] ],
+189 silly install resolved     devDependencies:
+189 silly install resolved      { bindings: '~1.2.1',
+189 silly install resolved        'node-gyp': '~1.0.2',
+189 silly install resolved        tap: '~0.5.0',
+189 silly install resolved        xtend: '~4.0.0' },
+189 silly install resolved     license: 'MIT',
+189 silly install resolved     gitHead: '28ea7e1b769f790c69deaf141b47e4d41e176e8b',
+189 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+189 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+189 silly install resolved     _id: 'nan@1.5.3',
+189 silly install resolved     _shasum: '4cd0ecc133b7b0700a492a646add427ae8a318eb',
+189 silly install resolved     _from: 'nan@>=1.5.0 <1.6.0',
+189 silly install resolved     _npmVersion: '2.1.18',
+189 silly install resolved     _nodeVersion: '1.0.3',
+189 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+189 silly install resolved     maintainers: [ [Object], [Object] ],
+189 silly install resolved     dist:
+189 silly install resolved      { shasum: '4cd0ecc133b7b0700a492a646add427ae8a318eb',
+189 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.5.3.tgz' },
+189 silly install resolved     directories: {},
+189 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.5.3.tgz',
+189 silly install resolved     readme: 'ERROR: No README data found!' },
+189 silly install resolved   { name: 'bindings',
+189 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+189 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+189 silly install resolved     version: '1.1.1',
+189 silly install resolved     author:
+189 silly install resolved      { name: 'Nathan Rajlich',
+189 silly install resolved        email: 'nathan@tootallnate.net',
+189 silly install resolved        url: 'http://tootallnate.net' },
+189 silly install resolved     repository:
+189 silly install resolved      { type: 'git',
+189 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+189 silly install resolved     main: './bindings.js',
+189 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+189 silly install resolved     _id: 'bindings@1.1.1',
+189 silly install resolved     dist:
+189 silly install resolved      { shasum: '951f7ae010302ffc50b265b124032017ed2bf6f3',
+189 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz' },
+189 silly install resolved     _from: 'bindings@>=1.1.1 <1.2.0',
+189 silly install resolved     _npmVersion: '1.3.2',
+189 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+189 silly install resolved     maintainers: [ [Object], [Object] ],
+189 silly install resolved     directories: {},
+189 silly install resolved     _shasum: '951f7ae010302ffc50b265b124032017ed2bf6f3',
+189 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.1.1.tgz' } ]
+190 info install nan@1.5.3 into /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+191 info install bindings@1.1.1 into /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+192 info installOne nan@1.5.3
+193 verbose installOne of nan to /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq not in flight; installing
+194 info installOne bindings@1.1.1
+195 verbose installOne of bindings to /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq not in flight; installing
+196 verbose lock using /Users/Finnishandy/.npm/_locks/nan-cf5643e608661de3.lock for /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan
+197 verbose lock using /Users/Finnishandy/.npm/_locks/bindings-3132e050831c91ed.lock for /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings
+198 silly install write writing nan 1.5.3 to /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan
+199 silly cache addNamed cb nan@1.5.3
+200 verbose unbuild node_modules/zmq/node_modules/nan
+201 silly install write writing bindings 1.1.1 to /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings
+202 silly gentlyRm /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan is being purged from base /Users/Finnishandy/WebstormProjects/NIRC
+203 verbose gentlyRm don't care about contents; nuking /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan
+204 verbose tar unpack /Users/Finnishandy/.npm/nan/1.5.3/package.tgz
+205 verbose tar unpacking to /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan
+206 silly gentlyRm /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan is being purged
+207 verbose gentlyRm don't care about contents; nuking /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan
+208 silly gunzTarPerm modes [ '755', '644' ]
+209 silly cache addNamed cb bindings@1.1.1
+210 verbose unbuild node_modules/zmq/node_modules/bindings
+211 silly gentlyRm /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings is being purged from base /Users/Finnishandy/WebstormProjects/NIRC
+212 verbose gentlyRm don't care about contents; nuking /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings
+213 verbose tar unpack /Users/Finnishandy/.npm/bindings/1.1.1/package.tgz
+214 verbose tar unpacking to /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings
+215 silly gentlyRm /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings is being purged
+216 verbose gentlyRm don't care about contents; nuking /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings
+217 silly gunzTarPerm modes [ '755', '644' ]
+218 silly gunzTarPerm extractEntry package.json
+219 silly gunzTarPerm extractEntry README.md
+220 silly gunzTarPerm extractEntry bindings.js
+221 silly gunzTarPerm extractEntry package.json
+222 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+223 silly gunzTarPerm extractEntry README.md
+224 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+225 silly gunzTarPerm extractEntry include_dirs.js
+226 silly gunzTarPerm extractEntry LICENSE.md
+227 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+228 silly gunzTarPerm extractEntry .dntrc
+229 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+230 silly gunzTarPerm extractEntry appveyor.yml
+231 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+232 info preinstall bindings@1.1.1
+233 silly install resolved []
+234 verbose about to build /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings
+235 info build /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings
+236 verbose linkStuff [ false,
+236 verbose linkStuff   false,
+236 verbose linkStuff   false,
+236 verbose linkStuff   '/Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules' ]
+237 info linkStuff bindings@1.1.1
+238 verbose linkBins bindings@1.1.1
+239 verbose linkMans bindings@1.1.1
+240 verbose rebuildBundles bindings@1.1.1
+241 silly gunzTarPerm extractEntry nan.h
+242 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+243 info install bindings@1.1.1
+244 info postinstall bindings@1.1.1
+245 verbose unlock done using /Users/Finnishandy/.npm/_locks/bindings-3132e050831c91ed.lock for /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/bindings
+246 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+247 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+248 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+249 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+250 silly gunzTarPerm extractEntry nan_new.h
+251 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+252 silly gunzTarPerm extractEntry CHANGELOG.md
+253 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+254 info preinstall nan@1.5.3
+255 silly install resolved []
+256 verbose about to build /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan
+257 info build /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan
+258 verbose linkStuff [ false,
+258 verbose linkStuff   false,
+258 verbose linkStuff   false,
+258 verbose linkStuff   '/Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules' ]
+259 info linkStuff nan@1.5.3
+260 verbose linkBins nan@1.5.3
+261 verbose linkMans nan@1.5.3
+262 verbose rebuildBundles nan@1.5.3
+263 info install nan@1.5.3
+264 info postinstall nan@1.5.3
+265 verbose unlock done using /Users/Finnishandy/.npm/_locks/nan-cf5643e608661de3.lock for /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq/node_modules/nan
+266 verbose about to build /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+267 info build /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+268 verbose linkStuff [ false,
+268 verbose linkStuff   false,
+268 verbose linkStuff   false,
+268 verbose linkStuff   '/Users/Finnishandy/WebstormProjects/NIRC/node_modules' ]
+269 info linkStuff zmq@2.11.0
+270 verbose linkBins zmq@2.11.0
+271 verbose linkMans zmq@2.11.0
+272 verbose rebuildBundles zmq@2.11.0
+273 verbose rebuildBundles [ 'bindings', 'nan' ]
+274 info install zmq@2.11.0
+275 verbose unsafe-perm in lifecycle true
+276 info zmq@2.11.0 Failed to exec install script
+277 verbose unlock done using /Users/Finnishandy/.npm/_locks/zmq-b644601880d79117.lock for /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+278 verbose stack Error: zmq@2.11.0 install: `node-gyp rebuild`
+278 verbose stack Exit status 1
+278 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+278 verbose stack     at EventEmitter.emit (events.js:110:17)
+278 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+278 verbose stack     at ChildProcess.emit (events.js:110:17)
+278 verbose stack     at maybeClose (child_process.js:1015:16)
+278 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+279 verbose pkgid zmq@2.11.0
+280 verbose cwd /Users/Finnishandy/WebstormProjects/NIRC/node-ipc
+281 error Darwin 14.3.0
+282 error argv "node" "/usr/local/bin/npm" "install" "zmq"
+283 error node v0.12.2
+284 error npm  v2.7.4
+285 error code ELIFECYCLE
+286 error zmq@2.11.0 install: `node-gyp rebuild`
+286 error Exit status 1
+287 error Failed at the zmq@2.11.0 install script 'node-gyp rebuild'.
+287 error This is most likely a problem with the zmq package,
+287 error not with npm itself.
+287 error Tell the author that this fails on your system:
+287 error     node-gyp rebuild
+287 error You can get their info via:
+287 error     npm owner ls zmq
+287 error There is likely additional logging output above.
+288 verbose exit [ 1, true ]
+289 verbose unbuild node_modules/zmq
+290 info preuninstall zmq@2.11.0
+291 info uninstall zmq@2.11.0
+292 verbose unbuild rmStuff zmq@2.11.0 from /Users/Finnishandy/WebstormProjects/NIRC/node_modules
+293 info postuninstall zmq@2.11.0
+294 silly gentlyRm /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq is being purged from base /Users/Finnishandy/WebstormProjects/NIRC
+295 verbose gentlyRm don't care about contents; nuking /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+296 silly vacuum-fs purging /Users/Finnishandy/WebstormProjects/NIRC/node_modules/zmq
+297 silly vacuum-fs quitting because other entries in /Users/Finnishandy/WebstormProjects/NIRC/node_modules

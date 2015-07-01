@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/29023316/node-gyp-pkg-config-command-not-found-on-mac-10-5-8-during-npm-install
